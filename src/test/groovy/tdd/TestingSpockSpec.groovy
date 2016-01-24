@@ -5,9 +5,10 @@ import spock.lang.Specification
 /**
  * Created by JamesKnowling on 24/01/2016.
  */
-class test1Spec extends Specification {
+class groovy extends Specification {
 
   def "one should always say hello"() {
-    Test1.re
+    expect:
+    TestingSpock.returnSomething() == "Hello"
   }
 }
